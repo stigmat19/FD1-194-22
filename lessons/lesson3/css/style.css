@@ -1,0 +1,242 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+ul li{
+    list-style-type: none;
+}
+
+.container{
+    width: 1336px;
+    margin: 0 auto;
+}
+
+.clearfix{
+    clear: both;
+}
+
+.top-red-line{
+    height: 42px;
+    background-color: red;
+}
+
+/* header */
+
+.header h1{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 52px;
+    line-height: 61px;
+    letter-spacing: 0.05em;
+    color: #000000;
+    float: left;
+}
+
+.header p{
+    font-family: 'Fira Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38px;
+    text-align: right;
+    letter-spacing: 0.02em;
+    color: #000000;
+    float: right;
+}
+
+.header .container{
+    padding-top: 37px;
+    padding-bottom: 37px;
+}
+
+/* wrpapper */
+.wrapper{
+    height: 3432px;
+    padding-top: 0.1px;
+    background-image: linear-gradient(180deg, #FC0D1B, #FC0D1B 30%, #fff 30%, #fff 70%, #181818 70%, #181818);
+}
+
+.wrapper .container{
+    border: 8px solid #000000;
+    border-radius: 50px;
+    margin-top: 70px;
+}
+
+/* header-top */
+.header-top{
+    height: 92px;
+    background-color: #fff;
+    border-top-left-radius: 42px;
+    border-top-right-radius: 42px;
+}
+.header-top h4{
+    padding-top: 20px;
+    padding-left: 36px;
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 26px;
+    letter-spacing: 0.05em;
+    color: #000000;
+    float: left;
+}
+
+.header-top ul{
+    padding-top: 35px;
+    margin-left: 231px;
+    overflow: hidden;
+}
+
+.header-top ul li{
+    float: left;
+}
+
+.header-top ul li a{
+    font-family: 'Fira Sans';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.04em;
+    color: #000000;
+    margin-right: 40px;
+}
+.header-icons{
+    float: right;
+    margin-right: 61px;
+    margin-top: 29px;
+}
+
+.header-icons img{
+    margin-right: 15px;
+}
+
+/* catalog-items */
+
+.catalog-items{
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #fff;
+    padding-bottom: 45px;
+}
+
+.catalog-items .catalog-item{
+    float: left;
+}
+
+.bg-gray{
+    width: 416px;
+    height: 416px;
+    background-color: #F3F3F3;
+    margin-right: 10px;
+}
+
+.catalog-item.other{
+    width: 448px;
+}
+.catalog-item div{
+    float: left;
+}
+.other-item{
+    width: 216px;
+    height: 204px;
+    background: #FFD325;
+}
+.other-item h6 {
+    font-family: 'Fira Sans';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    margin-top: 32px;
+}
+.other-item h3 {
+    font-family: 'Fira Sans';
+    font-weight: 600;
+    font-size: 42px;
+    line-height: 50px;
+    text-align: center;
+    letter-spacing: 0.12em;
+}
+.other-item p {
+    font-family: 'Fira Sans';
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    letter-spacing: 0.02em;
+}
+.other div:first-child{
+    margin-right: 10px;
+}
+.other div:last-child{
+    margin-top: 3px;
+}
+
+.other-item{
+    margin-top: 4px;
+    margin-right: 10px;
+}
+
+/* sale */
+.sale{
+    height: 407px;
+    background: url(../img/sale.png) no-repeat top 50px left 120px;
+}
+.sale-content{
+    float: right;
+    color: #fff;
+    margin-top: 70px;
+    margin-right: 91px;
+}
+.sale-content h3{
+    font-family: 'Fira Sans';
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+.sale-content h2{
+    font-family: 'Fira Sans';
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 34px;
+    text-align: right;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+.sale-content h2 span{
+    font-family: 'Fira Sans';
+    font-weight: 600;
+    font-size: 72px;
+    line-height: 86px;
+    text-align: right;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+.sale-content button{
+    width: 227px;
+    height: 50px;
+    background: #FFFFFF;
+    font-family: 'Fira Sans';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    border: none;
+    margin-top: 28px;
+    float: right;
+}
