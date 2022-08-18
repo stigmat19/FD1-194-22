@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    
+</head>
+<body>
+
+    <form action="http://fe.it-academy.by/TestForm.php" method="POST">
+        <div class="line clearfix">
+            <div>
+                <label for="first">
+                    <span class="require">Name</span>
+                </label>
+                <input type="text" placeholder="First" id="first" name="first" >
+            </div>
+            <div>
+                <input type="text" placeholder="Last">
+            </div>
+        </div>
+
+        <div>
+            <label for="Address">
+                <span class="require">Address</span>
+            </label>
+            <input type="text" placeholder="Address Line 1" id="Address" name="address_line_1" > <br>
+            <input type="text" placeholder="Address Line 2" name="address_line_3" >
+
+            <div class="address-items">
+                <input type="text" placeholder="City" name="city" >
+                <input type="text" placeholder="Zip Code" name="zip_code">
+                <input type="text" placeholder="State" name="state" >
+            </div>
+        </div>
+
+        <div class="line">
+            <div>
+                <label for="phone">
+                    <span class="require">Phone</span>
+                </label>
+                <input type="text" placeholder="Phone (US)" id="phone" name="phone" >
+            </div>
+           
+            <div>
+                <label for="email">
+                    <span class="require">Email</span>
+                </label>
+                <input type="text" placeholder="Email" id="email" name="email">
+            </div>
+        </div>
+
+        <div class="line">
+            <label for="comment_or_question">
+                <span class="require">Comments or Questions</span>
+            </label>
+            <textarea id="comment_or_question" name="comment_or_question" placeholder="A Textbox (Multiple Lines)"></textarea>
+        </div>
+
+        <div class="line clearfix">
+            <div class="file_wrap">
+                <input type="file">
+                <div class="file_wrap_item">+</div>
+            </div>
+        </div>
+        <br>
+        <hr>
+        <br>
+
+        <div class="checkbox_block">
+            <div>
+                text1
+                <input type="checkbox" id="check1">
+                <label for="check1"></label>
+            </div>
+
+            <div>
+                text2
+                <input type="checkbox" id="check2">
+                <label for="check2"></label>
+            </div>
+
+            <div>
+                text3
+                <input type="checkbox" id="check3">
+                <label for="check3"></label>
+            </div>
+        </div>
+    </form>
+    
+</body>
+</html>

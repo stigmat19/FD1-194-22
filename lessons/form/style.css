@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+
+body{
+    height: 10000px;
+    font-family: 'Roboto', sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.clearfix::after{
+    display: block;
+    content: '';
+    clear: both;
+}
+
+input{
+    border-radius: 0px;
+    border: 1px solid #e1e1e1;
+    font-size: 9px;
+    padding: 3px;
+    outline: none;
+    font-weight: 300;
+}
+
+
+label{
+    display: block;
+}
+
+label span:first-child{
+    font-size: 8px;
+    font-weight: 700;
+}
+
+span.require{
+    position: relative;
+}
+span.require::after{
+    content: "*";
+    position: absolute;
+    top: -3px;
+    right: -5px;
+    color: red;
+}
+
+form{
+    padding: 20px;
+}
+.line:first-child > div:nth-child(2){
+    margin-top: 19px;
+}
+
+.line div{    
+    width: 50%;
+}
+.line div:first-child{
+    float: left;
+    padding-right: 2px;
+}
+.line div:last-child{
+    float: right;
+    padding-left: 2px;
+}
+.line div input{
+    width: 100%;
+}
+
+label[for="Address"]~input{
+    width: 100%;
+}
+.address-items{
+    margin-top: 3px;
+}
+.address-items input{
+    width: 32.9%;
+}
+.address-items input[name="city"]{
+    float: left;
+}
+.address-items input[name="zip_code"]{
+    float: right;
+}
+.address-items input[name="state"]{
+    display: block;
+    margin: 0 auto;
+}
+
+input[name="phone"]{
+    background: url(images.png) no-repeat left 3px center;
+    background-size: 10px;
+    padding-left: 16px;
+}
+
+input[name="phone"]{
+    background: url(email.png) no-repeat left 3px center;
+    background-size: 10px;
+    padding-left: 16px;
+}
+
+textarea{
+    border-radius: 0px;
+    border: 1px solid #e1e1e1;
+    font-size: 9px;
+    padding: 3px;
+    outline: none;
+    font-weight: 300;
+    width: 100%;
+    resize: none;
+}
+.line .file_wrap:first-child{
+    height: 60px;
+    float: left;
+    position: relative;
+}
+.file_wrap > input{
+    opacity: 0;
+    z-index: 2;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.line .file_wrap_item{
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border: 1px dashed #e1e1e1;
+    color: #e1e1e1;
+    text-align: center;
+    padding-top: 18px;
+}
+
+
+.checkbox_block input{
+    display: none;
+}
+
+input + label{
+    width: 35px;
+    height: 17px;
+    background: red;
+    display: inline-block;
+    border-radius: 50px;
+    vertical-align: -3px;
+    position: relative;
+    user-select: none;
+    transition: 0.5s;
+}
+input + label::before{
+    content: "";
+    width: 13px;
+    height: 13px;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    background: #fff;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+
+
+input:checked + label{
+    background: green;
+}
+input:checked + label::before{
+    left: 20px;
+}
