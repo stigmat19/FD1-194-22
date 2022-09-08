@@ -1,0 +1,27 @@
+@import "variables.scss";
+
+@mixin teachersBg(){
+    @for $i from 1 through 5{
+        &:nth-child(#{$i}){
+            background: url($imagePath + 'teachers#{$i}.png') center no-repeat;
+            background-size: cover;
+        }
+    }
+}
+
+@mixin btn($w) {
+    width: $w;
+    height: 55px;
+    border: 1px solid #46B249;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 19px;
+    line-height: 173.5%;
+    color: #ffffff;
+    background: transparent;
+
+    & i{
+        margin-left: 16px;
+        transform: rotate(90deg);
+    }
+}

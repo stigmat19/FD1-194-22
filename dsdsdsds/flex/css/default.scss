@@ -1,0 +1,78 @@
+@import "variables.scss";
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: $Poppins;
+    font-size: $fz_default;
+    background: $black;
+    height: 10000px;
+}
+
+.container{
+    width: $xl;
+    margin: 0 auto;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+li{
+    list-style-type: none;
+}
+h2{
+    font-family: $Ramabhadra;
+    font-size: $fz100;
+    line-height: 125%;
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: 1px 1px 0px #ffffff, -1px -1px 0px #ffffff, -1px 1px 0px #ffffff, 1px -1px 0px #ffffff, 1px -1px 0px #ffffff;
+}
+
+.circle{
+    width: 224px;
+    height: 224px;
+    background: $green;
+    padding: 8px;
+    border-radius: 50%;
+    position: relative;
+    margin-top: 107px;
+
+    p{  
+        height: 100%;
+        width: 100%;
+        border-radius: 50%;
+        border: 1px solid $black;
+        font-weight: $bold;
+        font-size: $fz20;
+        line-height: 30px;
+        text-align: center;
+        text-transform: uppercase;
+        color: $black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &:after{
+        content: 'PLUS';
+        width: 68px;
+        height: 68px;
+        position: absolute;
+        top: 16px;
+        right: -15px;
+        border: 1px solid $black;
+        background: $green;
+        color: $white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+    }
+}
