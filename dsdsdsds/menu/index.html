@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+
+        body{
+            overflow-x: hidden;
+        }
+        div.block{
+            height: 500px;
+        }
+        #one{
+            background: red;
+        }
+        #two{
+            background: green;
+        }
+        #three{
+            background: blue;
+        }
+        #four{
+            background: violet;
+        }
+        #five{
+            background: orange;
+        }
+        ul{
+            background-color: rgba(240, 248, 255, 0.397);
+            display: flex;
+            justify-content: space-around;
+            /* example 1 */
+            /* height: 0px; */
+            /* overflow: hidden; */
+
+            /* example 2 */
+            width: 100px;
+            transform: translate(-100px, 0px);
+            transition: 0.5s;
+        }
+        li{
+            list-style-type: none;
+        }
+        .wrap{
+            height: 50px;
+            width: 100%;
+            font-size: 32px;
+            top: 0;
+            left: 0;
+            background-color: rgba(240, 248, 255, 0.397);
+            position: fixed;
+        }
+        .controls-menu{
+            position: absolute;
+            top: 5px;
+            right: 10px;
+            cursor: pointer;
+        }
+        #close{
+            display: none;
+        }
+
+        @media all and (max-width: 900px) {
+            ul{
+                flex-direction: column;
+                margin-top: 50px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="wrap">
+        <div id="open" class="controls-menu">open</div>
+        <div id="close" class="controls-menu">close</div>
+
+        <ul id="menu">
+            <li>
+                <a href="#one">one</a>
+            </li>
+            <li>
+                <a href="#two">two</a>
+            </li>
+            <li>
+                <a href="#three">three</a>
+            </li>
+            <li>
+                <a href="#four">four</a>
+            </li>
+            <li>
+                <a href="#five">five</a>
+            </li>
+        </ul>
+    </div>
+    
+
+    <div id="one" class="block"></div>
+    <div id="two" class="block"></div>
+    <div id="three" class="block"></div>
+    <div id="four" class="block"></div>
+    <div id="five" class="block"></div>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function(){
+            var menu = '#menu';
+
+            $(menu).on('click', 'a', function(e){
+                e.preventDefault();
+
+                var id = $(this).attr('href');
+                var top = $(id).offset().top;
+
+                $('html, body').animate({scrollTop: top}, 1000)
+            })
+
+
+            //example 1
+            // $('#open').on('click', function(){
+            //     $('#menu').css('height', '210px');
+            //     $(this).css('display', 'none');
+            //     $('#close').css('display', 'block');
+            // })
+
+            // $('#close').on('click', function(){
+            //     $('#menu').css('height', '0px');
+            //     $(this).css('display', 'none');
+            //     $('#open').css('display', 'block');
+            // })
+
+            //example 2
+
+            $('#open').on('click', function(){
+                $('#menu').css('transform', 'translate(0px, 0px)');
+                $(this).css('display', 'none');
+                $('#close').css('display', 'block');
+            })
+
+            $('#close').on('click', function(){
+                $('#menu').css('transform', 'translate(-100px, 0px)');
+                $(this).css('display', 'none');
+                $('#open').css('display', 'block');
+            })
+
+
+          
+        })
+    </script>
+</body>
+</html>
